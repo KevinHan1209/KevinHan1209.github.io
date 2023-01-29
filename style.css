@@ -52,6 +52,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: rgba(0,0,0);
+    padding-top: 0px;
 }
 
 .logo{
