@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9fcb0742c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/UTLogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#passions">Interests</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi! I'm <span style="color: #1d79b7">Kevin Han</span>.</h1>
+                <p>Physics and Mathematics Student at the University of Texas at Austin</p>
+            </div>
+        </div>
+    </div>    
+<!-----------about-------------->
+    <div id="about">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/AboutImage.jpg" width = "400" height = "500">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am currently a second year computational physics and mathematics major at the University of Texas at Austin. I am also pursuing three minors in computer science, data science, and computational engineering. Right now, I am an undergraduate researcher in Dr. Lang's High Energy Physics Lab, and I work on data analysis of information sent from Fermilab's NOvA detectors (more information can be found here). I plan on getting a Master's degree in data science and ML after my undergraduate career. I built this website from scratch using self-taught HTML, CSS, and JavaScript out of both personal enjoyment for front-end development, and intention to showcase my projects and experiences. Aside from my classes and research, I enjoy working out, hiking, playing video games, and building websites like this!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Technical(Back-end/Data)</span><br>Proficient in Python (Numpy, Scipy, Matplotlib, PANDAS), Java, and MatLab. Intermediate in C++. Exposed to ROOT.</li>
+                            <li><span>Technical(Front-end)</span><br>Intermediate in HTML, CSS, and Javascript.</li>
+                            <li><span>Quantitative</span><br>Experienced in numerical analysis, simulations, and statistics. See education for more information.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Undergraduate Researcher at the UT High Energy Physics Lab in Collaboration with Fermilab</li>
+                            <li><span>2022 - Current</span><br>Teaching Assistant at the UT Physics Department</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2025</span><br>Bachelor of Science in Computational Physics<br> Bachelor of Science and Arts in Mathematics<br>Elements of Computing Certificate<br>Computational Sciences and Engineering Certificate<br>Scientific Computation and Data Science Certificate<br><br> See relevant coursework here.</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!---------Passions------->
+    <div id="passions">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+            <h1 class="sub-title">My Career Interests</h1>
+            <div class="passions-list">
+                <div>
+                    <i class="fa-solid fa-calculator"></i>
+                    <h2>Data Science</h2>
+                    <p>As a physics major, I've always had an insatiable thirst for knowledge about how nature works at a fundamental level. This consequently drew my attention to data science, as the mediums we use to model nature's functionality stems from acquiring and analyzing experimental data. Now, I have found a love for data analysis of systems beyond just nature and physics. Give me a data set from any system, such as unnatural ones such as financial systems, and I would enjoy analyzing it and drawing interesting conclusions about the system it was pulled from.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h2>Software Engineering</h2>
+                    <p>The internet has gifted me with so much knowledge, including that to build this very website, and that's all thanks to software engineering. I am interested in full stack software engineering as I enjoy data analysis and the creative/aesthetic power programming holds. I would love to build software that can help make life a little easier for people.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h2>Machine Learning</h2>
+                    <p>Interlinked with the other two interests, I am fascinated by the potential machine learning holds. Coming from a physics background, I've witnessed the power that machine learning and artificial intelligence has on frontier particle physics research. I plan on learning and thinking of new ways on how it can be used in other fields too, as datasets on any system has potential machine learning applications.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------------portfolio--------->
+    <div id="portfolio">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/IsingModel.gif">
+                    <div class="layer">
+                        <h3>Critical Phenomena: Ising Model</h3>
+                        <p>First college project. Studied thermodynamics and statistical mechanics to implement Monte-Carlo simulations on a multi-dimensional Ising Model with a very large amount of spin sites (would take years for exact calculation) in order to obtain critical temperatures.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/NOVA.jpeg">
+                    <div class="layer">
+                        <h3>Hadron Monitor Analysis</h3>
+                        <p>Imported raw data from Fermilab's Hadron Monitor on their NuMi beam. Recieved data on various physical parameters with column sizes of 1.5 million indices. Converted to CSV and utilized PANDAS and matplotlib to clean, format, and analyze data in order to draw important physical conclusions about the functionality of the particle beam. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/HB.jpeg">
+                    <div class="layer">
+                        <h3>Higgs Test</h3>
+                        <p>Implemented MadGraph software and studied aspects of quantum field theory to simulate the 2012 CERN discovery of the Higgs Boson. Analyzed 10 runs of 10,000 proton-proton collision events and utilized python to correlate four-momenta of post-collision particles with respect to their event density and discovered the Higgs particle resonance peak. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!------contact-------->
+    <div id="contact">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+            <div class="row">
+                <div class="contact-info">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i> kevinhan@utexas.edu</p>
+                    <p> <i class="fa-solid fa-phone"></i> 281-727-8887</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/kevinhan1209/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                </div> 
+        </div>
+    </div>
+
+    <div class="copyright">       
+        <p>Copyright © of Kevin Han. Made with HTML, CSS, and Javascript.</p>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementByID("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
