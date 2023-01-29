@@ -52,9 +52,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #FFFFFF; 
-    opacity: 0.5; 
-    filter: alpha(opacity=50);
 }
 
 .logo{
