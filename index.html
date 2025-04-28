@@ -26,8 +26,8 @@
             </nav>
             <div class="header-text">
                 <h1>Hi! I'm <span style="color: #1d79b7">Kevin Han</span>.</h1>
-                <p>Physics, Mathematics and Astronomy Student at the University of Texas at Austin</p>
-                <p>Minors in Computer Science, Data Science and Computational Science</p>
+                <p>Physics, Mathematics and CS at the University of Texas at Austin</p>
+                <p>Current AI/ML Engineer at Linkt AI</p>
             </div>
         </div>
     </div>    
@@ -40,35 +40,46 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I am currently a fourth year physics, mathematics and astronomy triple major at the University of Texas at Austin. I am also pursuing three minors in computer science, data science, and computational science and engineering. Right now, I am an undergraduate researcher in Dr. Peter Stone's Learning Agents Research Group (LARG), and I work on exploration and active pre-training for RL models inspired by human infants. I have applied to PhD programs for computer science and am currently waiting to hear back. I built this website from scratch using self-taught HTML, CSS, and JavaScript to showcase my projects and experiences. Aside from my classes and research, I enjoy working out, hiking, playing video games, and building websites like this!</p>
+                    <p>Hey there! I am a recent graduate of the University of Texas at Austin and incoming AI/ML Engineer at Linkt AI, where I will be working on the development of agents. I am also an undergraduate researcher in Dr. Peter Stone's Learning Agents Research Group (LARG) where I work on exploration and active pre-training for RL models inspired by human infants. I built this website from scratch using self-taught HTML, CSS, and JavaScript to showcase my projects and experiences. Aside from my work and research, I enjoy working out, hiking, playing video games, and learning about history!</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links"  onclick="opentab('experience')">Experience</p>
                         <p class="tab-links"  onclick="opentab('education')">Education</p>
+                        <p class="tab-links"  onclick="opentab('awards')">Awards</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Technical(Back-end/Data)</span><br>Proficient in Python (Numpy, PyTorch, Scipy, Matplotlib, PANDAS), Java, and MatLab. Intermediate in C++.</li>
-                            <li><span>Technical(Front-end)</span><br>Intermediate in HTML, CSS, and Javascript.</li>
-                            <li><span>Quantitative</span><br>Experienced in numerical analysis, simulations, statistics. See education for more information.</li>
+                            <li><span>Technical(Back-end/Data)</span><br>Proficient in Python (along with data science/visualization libraries).<br>Was once proficient in Java and Matlab, but haven't used those fossils in a while.</li>
+                            <li><span>Technical(Front-end)</span><br>Intermediate in HTML, CSS, and Javascript (as evidenced by this website).</li>
+                            <li><span>Quantitative</span><br>Experienced in numerical analysis, linear algebra, and statistics. See education for more information.</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>Fall 2024 - Current</span><br>Undergraduate Researcher at the Learning Agents Research Group (LARG)</li>
+                            <li><span>Summer 2025 - Current</span><br>AI/ML Engineer at Linkt AI</li>
+                            <li><span>Fall 2024 - Spring 2025</span><br>Undergraduate Researcher at the Learning Agents Research Group (LARG)</li>
                             <li><span>Summer 2024</span><br>Amazon SURE Research Fellow at Columbia University</li>
                             <li><span>Summer 2023</span><br>Moncrief Research Fellow at the Oden Institute for Computational Science and Engineering</li>
                             <li><span>Fall 2022 - Spring 2023</span><br>Undergraduate Researcher at the UT High Energy Physics Lab in Collaboration with Fermilab</li>
-                            <li><span>Fall 2022 - Current</span><br>Teaching Assistant at the UT Physics Department</li>
+                            <li><span>Fall 2022 - Spring 2025</span><br>Teaching Assistant at the UT Physics Department</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>University of Texas at Austin, 2021 - 2025</span><br>Bachelor of Science in Physics<br> Bachelor of Science in Mathematics<br>Bachelor of Science and Arts in Astronomy<br>Elements of Computing Certificate<br>Computational Sciences and Engineering Certificate<br>Scientific Computation and Data Science Certificate<br><br> See relevant coursework <a href="Courses.html" color="#1d79b7">here</a>.</li>
+                            <li><span>University of Texas at Austin, 2021 - 2025</span><br>Bachelor of Science in Physics<br> Bachelor of Science in Mathematics<br>Bachelor of Science and Arts in Astronomy<br>Programming and Computation Certificate<br>Computational Sciences and Engineering Certificate<br>Scientific Computation and Data Science Certificate<br><br> See relevant coursework <a href="Courses.html" color="#1d79b7">here</a>.</li>
                         </ul>
                     </div>
-                    
+                    <div class="tab-contents" id="awards">
+                        <ul>
+                            <li><span>Summer 2024</span><br>James W. Vick Endowed Presidential Scholarship in Natural Sciences</li>
+                            <li><span>Summer 2024</span><br>Melvin J. Rieger Scholarship Fund in Physics</li>
+                            <li><span>Spring 2024</span><br><a href="https://oden.utexas.edu/news-and-events/news/2024-Undergraduate-scholarships-awarded-Carey-and-Babuska/">Graham F. Carey Undergraduate Scholarship in Computational Science</a></li>
+                            <li><span>Summer 2023</span><br>Nancy Francis and William McMinn Endowed Presidential Scholarship in Phyics</li>
+                            <li><span>2021-2025</span><br>University Honors</li>
+                            
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,19 +115,19 @@
             <h1 class="sub-title">My Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/IsingModel.gif">
+                    <img src="images/babyexploration.gif">
                     <div class="layer">
-                        <h3>Critical Phenomena: Ising Model</h3>
-                        <p>First college project. Studied thermodynamics and statistical mechanics to implement Monte-Carlo simulations on a multi-dimensional Ising Model with a very large amount of spin sites (would take years for exact calculation) in order to obtain critical temperatures.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Human-Inspired Exploration in Reinforcement Learning</h3>
+                        <p>Collaborated with NYU's department of psychology to study how infants explore their environments compared to state of the art unsupervised reinforcement learning algorithms, such as APT, DIAYN, and RND. Also built RL environment matching real-world experiments as well as post-processed experiment data to a MDP formalism.</p>
+                        <a href="https://github.com/KevinHan1209/mini_behavior"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/NOVA.jpeg">
+                    <img src="images/federateddrones.jpg">
                     <div class="layer">
-                        <h3>Hadron Monitor Analysis</h3>
-                        <p>Imported raw data from Fermilab's Hadron Monitor on their NuMi beam. Recieved data on various physical parameters with column sizes of 1.5 million indices. Converted to CSV and utilized PANDAS and matplotlib to clean, format, and analyze data in order to draw important physical conclusions about the functionality of the particle beam. </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Federated Ensembled Reinforcement Learning on Micro-UAVs</h3>
+                        <p>Created a universal platform for ensembled and federated deep reinforcement learning compatible with stable_baselines3 and implemented a novel, momentum-based federated RL algorithm, FedSVRPG-M, along with other state-of-the-art algorithms in an ensembled fashion for small quadrotor drones. </p>
+                        <a href="https://github.com/KevinHan1209/FederatedRL"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -128,7 +139,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
+            <a href="https://github.com/KevinHan1209" class="btn">See more</a>
         </div>
     </div>
 
@@ -141,7 +152,7 @@
                     <p> <i class="fa-solid fa-envelope"></i> kevinhan@utexas.edu</p>
                     <p> <i class="fa-solid fa-phone"></i> 281-727-8887</p>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/kevinhan1209/"><i class="fa-brands fa-linkedin"></i></a>
+                        <p href="https://www.linkedin.com/in/kevinhan1209/"><i class="fa-brands fa-linkedin"></i>kevinhan1209</p>
                     </div>
                     <a href="images/Spring2025Resume.pdf" download class="btn btn2">Download Resume/CV</a>
                 </div>
